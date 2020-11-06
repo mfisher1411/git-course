@@ -1,0 +1,52 @@
+Git система контроля версий
+GitHub внешний репозиторий ревизионных файлов
+Переходим в нужную директорию и инициализируем наше хранилище с помощью команды git init
+Необходимо проинициализировать пользователя командами
+git config --global user.name "mfisher"
+git config --global user.email matthewfisher1411@gmail.com
+git config --list вывод конфигурационных настроек
+git status
+git add . Точка означает добавление всех файлов в систему  git
+git commit -a -m 'add first commit'
+-a
+--all
+Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.
+
+-m <msg>
+--message=<msg>
+Use the given <msg> as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs.
+
+git checkout master - переключение на ветку master
+
+
+git remote add origin https://github.com/mfisher1411/demoGit.git
+git branch -M main переименовывает ветку master в ветку main
+git push -u origin main
+
+потом просто git push
+
+git --version - проверка наличия гит в системе
+
+Чтобы заигнорить определенные файлы и папки, необходимо создать файл .gitignore и в нем перечислить все эти папки и файлы
+
+git branch выводит список всех существующих веток
+git branch test создает ветку test
+git branch -D test удаляет ветку test
+
+git branch readme 
+git checkout readme переключает на ветку readme
+
+git checkout -b new создает ветку new и сразу на нее переключает
+
+git checkout master
+git merge readme совмещает ветку master с веткой readme
+
+
+cd ..
+mkdir new-git-project
+cd new-git-project
+git clone https://github.com/mfisher1411/git-course.git в папку new-git-project склонируется проект git-course (будет лежать папка git-course)
+
+
+если сделать изменения в проекте в папке new-git-project и запушить их на гитхаб, то эти изменения не появятся
+локально в папке git-course пока не будет выполнена команда git pull

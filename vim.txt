@@ -1,0 +1,6 @@
+mkdir new-dir To make a new directory
+vim demo.txt create a new file in vim
+to enter insert mode and to append text type the letter i
+When done editing press the Esc key to go back to command mode
+Once in command mode to save and exit the file type a colon (:) followed by x. Press the Enter key
+To go out :q and press enter
