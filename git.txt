@@ -50,3 +50,7 @@ git clone https://github.com/mfisher1411/git-course.git в папку new-git-pr
 
 если сделать изменения в проекте в папке new-git-project и запушить их на гитхаб, то эти изменения не появятся
 локально в папке git-course пока не будет выполнена команда git pull
+
+https://frontend-stuff.com/blog/updating-git-branch/ - как обновить свою ветку до состояния ветки мастер
+1) merge 2)rebase - используется только в том случае, когда ветка личная и не делится с другими
+
